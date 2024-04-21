@@ -10,8 +10,8 @@
     "objectID": "talk.html#cronex-as-a-client",
     "href": "talk.html#cronex-as-a-client",
     "title": "cronex.nvim",
-    "section": "Cronex as a client",
-    "text": "Cronex as a client\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n        },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
+    "section": "Cronex as a Client",
+    "text": "Cronex as a Client\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n    },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
   },
   {
     "objectID": "talk.html#repo-docu",

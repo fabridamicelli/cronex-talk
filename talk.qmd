@@ -1,6 +1,6 @@
 ---
 title: "`cronex.nvim`"
-subtitle: "Make cron expressions readable again 🚀"
+subtitle: "🕒 Make cron expressions readable again 🚀"
 author: "@fabridamicelli"
 format: 
   revealjs:
@@ -38,7 +38,6 @@ do stuff...
 
 ---
 
-
 ## Cronex in Action
 
 ![](cronex.gif)
@@ -46,14 +45,14 @@ do stuff...
 
 ---
 
-## Cronex as a client
+## Cronex as a Client
 
 ```lua
 require("cronex").setup({
     extractor = {
         cron_from_line = require("cronex.cron_from_line").cron_from_line,
         extract = require("cronex.extract").extract,
-        },
+    },
     explainer = {
         cmd = "cronstrue",
         args = {}

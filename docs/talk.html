@@ -392,7 +392,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><code>cronex.nvim</code></h1>
-  <p class="subtitle">Make cron expressions readable again 🚀</p>
+  <p class="subtitle">🕒 Make cron expressions readable again 🚀</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -431,12 +431,12 @@
 
 <img data-src="cronex.gif" class="r-stretch"></section>
 <section id="cronex-as-a-client" class="slide level2">
-<h2>Cronex as a client</h2>
+<h2>Cronex as a Client</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb3-1"><a></a><span class="fu">require</span><span class="op">(</span><span class="st">"cronex"</span><span class="op">).</span>setup<span class="op">({</span></span>
 <span id="cb3-2"><a></a>    <span class="va">extractor</span> <span class="op">=</span> <span class="op">{</span></span>
 <span id="cb3-3"><a></a>        <span class="va">cron_from_line</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.cron_from_line"</span><span class="op">).</span><span class="va">cron_from_line</span><span class="op">,</span></span>
 <span id="cb3-4"><a></a>        <span class="va">extract</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.extract"</span><span class="op">).</span><span class="va">extract</span><span class="op">,</span></span>
-<span id="cb3-5"><a></a>        <span class="op">},</span></span>
+<span id="cb3-5"><a></a>    <span class="op">},</span></span>
 <span id="cb3-6"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
 <span id="cb3-7"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">"cronstrue"</span><span class="op">,</span></span>
 <span id="cb3-8"><a></a>        <span class="va">args</span> <span class="op">=</span> <span class="op">{}</span></span>
