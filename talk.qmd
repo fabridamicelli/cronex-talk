@@ -1,0 +1,85 @@
+---
+title: "`cronex.nvim`"
+subtitle: "Make cron expressions readable again 🚀"
+author: "@fabridamicelli"
+format: 
+  revealjs:
+    incremental: true   
+
+---
+
+```yaml
+
+name: An awesome GitHub workflow
+on:
+  schedule:
+    - cron: '2-3 */4 1,2,4 2 4-6'
+
+
+do stuff...
+
+```
+---
+
+```yaml
+
+name: An awesome GitHub workflow
+on:
+  schedule:
+    - cron: '2-3 */4 1,2,4 2 4-6'
+
+
+do stuff...
+
+```
+
+![](cron-guru.png)
+
+
+---
+
+
+## Cronex in Action
+
+![](cronex.gif)
+
+
+---
+
+## Cronex as a client
+
+```lua
+require("cronex").setup({
+    extractor = {
+        cron_from_line = require("cronex.cron_from_line").cron_from_line,
+        extract = require("cronex.extract").extract,
+        },
+    explainer = {
+        cmd = "cronstrue",
+        args = {}
+    },
+    format = function(s)
+        return s
+    end
+})
+
+```
+![](use-clock.png)
+
+---
+
+## Repo & Docu
+
+::::{.columns}
+:::{.column width="65%"}
+![](qr-code.svg){}
+
+:::
+
+:::{.column width="35%"}
+### github.com/fabridamicelli/cronex.nvim
+![](cronex.gif)
+
+:::
+::::
+

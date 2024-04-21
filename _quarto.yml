@@ -1,0 +1,4 @@
+project:
+  title: "cronex.nvim"
+  type: website
+  output-dir: docs
