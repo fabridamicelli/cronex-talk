@@ -425,6 +425,18 @@
 <span id="cb2-7"><a></a></span>
 <span id="cb2-8"><a></a><span class="at">do stuff...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
+<img data-src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNpd3RoMjN1MmdwZXUyM2U1OTEzbTJ5MnB1ODZpNHBuYTZvdm41biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a></span>
+<span id="cb3-2"><a></a><span class="fu">name</span><span class="kw">:</span><span class="at"> An awesome GitHub workflow</span></span>
+<span id="cb3-3"><a></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb3-4"><a></a><span class="at">  </span><span class="fu">schedule</span><span class="kw">:</span></span>
+<span id="cb3-5"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">cron</span><span class="kw">:</span><span class="at"> </span><span class="st">'2-3 */4 1,2,4 2 4-6'</span></span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a><span class="at">do stuff...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 <img data-src="cron-guru.png" class="r-stretch"></section>
 <section id="cronex-in-action" class="slide level2">
 <h2>Cronex in Action</h2>
@@ -432,23 +444,23 @@
 <img data-src="cronex.gif" class="r-stretch"></section>
 <section id="cronex-as-a-client" class="slide level2">
 <h2>Cronex as a Client</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb3-1"><a></a><span class="fu">require</span><span class="op">(</span><span class="st">"cronex"</span><span class="op">).</span>setup<span class="op">({</span></span>
-<span id="cb3-2"><a></a>    <span class="va">extractor</span> <span class="op">=</span> <span class="op">{</span></span>
-<span id="cb3-3"><a></a>        <span class="va">cron_from_line</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.cron_from_line"</span><span class="op">).</span><span class="va">cron_from_line</span><span class="op">,</span></span>
-<span id="cb3-4"><a></a>        <span class="va">extract</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.extract"</span><span class="op">).</span><span class="va">extract</span><span class="op">,</span></span>
-<span id="cb3-5"><a></a>    <span class="op">},</span></span>
-<span id="cb3-6"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
-<span id="cb3-7"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">"cronstrue"</span><span class="op">,</span></span>
-<span id="cb3-8"><a></a>        <span class="va">args</span> <span class="op">=</span> <span class="op">{}</span></span>
-<span id="cb3-9"><a></a>    <span class="op">},</span></span>
-<span id="cb3-10"><a></a>    <span class="fu">format</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">s</span><span class="op">)</span></span>
-<span id="cb3-11"><a></a>        <span class="cf">return</span> <span class="va">s</span></span>
-<span id="cb3-12"><a></a>    <span class="kw">end</span></span>
-<span id="cb3-13"><a></a><span class="op">})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb4-1"><a></a><span class="fu">require</span><span class="op">(</span><span class="st">"cronex"</span><span class="op">).</span>setup<span class="op">({</span></span>
+<span id="cb4-2"><a></a>    <span class="va">extractor</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb4-3"><a></a>        <span class="va">cron_from_line</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.cron_from_line"</span><span class="op">).</span><span class="va">cron_from_line</span><span class="op">,</span></span>
+<span id="cb4-4"><a></a>        <span class="va">extract</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.extract"</span><span class="op">).</span><span class="va">extract</span><span class="op">,</span></span>
+<span id="cb4-5"><a></a>    <span class="op">},</span></span>
+<span id="cb4-6"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb4-7"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">"cronstrue"</span><span class="op">,</span></span>
+<span id="cb4-8"><a></a>        <span class="va">args</span> <span class="op">=</span> <span class="op">{}</span></span>
+<span id="cb4-9"><a></a>    <span class="op">},</span></span>
+<span id="cb4-10"><a></a>    <span class="fu">format</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">s</span><span class="op">)</span></span>
+<span id="cb4-11"><a></a>        <span class="cf">return</span> <span class="va">s</span></span>
+<span id="cb4-12"><a></a>    <span class="kw">end</span></span>
+<span id="cb4-13"><a></a><span class="op">})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img data-src="use-clock.png" class="r-stretch"></section>
-<section id="repo-docu" class="slide level2">
-<h2>Repo &amp; Docu</h2>
+<section id="code-documentation" class="slide level2">
+<h2>Code &amp; Documentation</h2>
 <div class="columns">
 <div class="column" style="width:65%;">
 <p><img data-src="qr-code.svg"></p>

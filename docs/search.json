@@ -14,10 +14,10 @@
     "text": "Cronex as a Client\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n    },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
   },
   {
-    "objectID": "talk.html#repo-docu",
-    "href": "talk.html#repo-docu",
+    "objectID": "talk.html#code-documentation",
+    "href": "talk.html#code-documentation",
     "title": "cronex.nvim",
-    "section": "Repo & Docu",
-    "text": "Repo & Docu\n\n\n\n\ngithub.com/fabridamicelli/cronex.nvim"
+    "section": "Code & Documentation",
+    "text": "Code & Documentation\n\n\n\n\ngithub.com/fabridamicelli/cronex.nvim"
   }
 ]

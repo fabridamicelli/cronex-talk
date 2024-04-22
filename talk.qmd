@@ -32,6 +32,20 @@ on:
 do stuff...
 
 ```
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNpd3RoMjN1MmdwZXUyM2U1OTEzbTJ5MnB1ODZpNHBuYTZvdm41biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif)
+---
+
+```yaml
+
+name: An awesome GitHub workflow
+on:
+  schedule:
+    - cron: '2-3 */4 1,2,4 2 4-6'
+
+
+do stuff...
+
+```
 
 ![](cron-guru.png)
 
@@ -67,7 +81,7 @@ require("cronex").setup({
 
 ---
 
-## Repo & Docu
+## Code & Documentation
 
 ::::{.columns}
 :::{.column width="65%"}
