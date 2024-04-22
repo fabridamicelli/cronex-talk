@@ -1,11 +1,15 @@
 ---
 title: "`cronex.nvim`"
-subtitle: "🕒 Make cron expressions readable again 🚀"
-author: "@fabridamicelli"
-format: 
-  revealjs:
-    incremental: true   
+subtitle: "🕒 Make cron expressions readable again 🤓"
+author: "𝕏 fabridamicelli"
+title-slide-attributes:
+    data-background-image: "nvim.png"
+    data-background-size: 5%
+    data-background-position: "22% 38%"
 
+format:
+  revealjs:
+    incremental: true
 ---
 
 ```yaml
