@@ -1,7 +1,10 @@
 ---
 title: "`cronex.nvim`"
 subtitle: "🕒 Make cron expressions readable again 🤓"
-author: "𝕏 fabridamicelli"
+author:
+ - "爵 fabridamicelli.github.io"
+ - "𝕏 fabridamicelli"
+
 title-slide-attributes:
     data-background-image: "nvim.png"
     data-background-size: 5%
@@ -36,7 +39,12 @@ on:
 do stuff...
 
 ```
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNpd3RoMjN1MmdwZXUyM2U1OTEzbTJ5MnB1ODZpNHBuYTZvdm41biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNpd3RoMjN1MmdwZXUyM2U1OTEzbTJ5MnB1ODZpNHBuYTZvdm41biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif" />
+</p>
+
+<!-- ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNpd3RoMjN1MmdwZXUyM2U1OTEzbTJ5MnB1ODZpNHBuYTZvdm41biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRQBXSCnEFJIuxktnw/giphy.gif) -->
 ---
 
 ```yaml
