@@ -115,8 +115,16 @@ require("cronex").setup({
 :::
 
 :::{.column width="50%"}
-### github.com/fabridamicelli/cronex.nvim
-![](screencast-usage.gif)
+
+ <br/><br/>
+
+
+<span style="font-size:2.2em;">
+ github.com/
+ fabridamicelli/
+ cronex.nvim
+</span>
+
 
 :::
 ::::
