@@ -58,7 +58,7 @@ do stuff...
 
 ## Cronex in Action
 
-![](cronex.gif)
+![](screencast-usage.gif)
 
 
 ---
@@ -88,14 +88,14 @@ require("cronex").setup({
 ## Code & Documentation
 
 ::::{.columns}
-:::{.column width="65%"}
+:::{.column width="50%"}
 ![](qr-code.svg){}
 
 :::
 
-:::{.column width="35%"}
+:::{.column width="50%"}
 ### github.com/fabridamicelli/cronex.nvim
-![](cronex.gif)
+![](screencast-usage.gif)
 
 :::
 ::::
