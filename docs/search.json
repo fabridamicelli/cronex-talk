@@ -7,11 +7,18 @@
     "text": "Cronex in Action"
   },
   {
-    "objectID": "talk.html#cronex-as-a-client",
-    "href": "talk.html#cronex-as-a-client",
+    "objectID": "talk.html#cronex-configuration",
+    "href": "talk.html#cronex-configuration",
     "title": "cronex.nvim",
-    "section": "Cronex as a Client",
-    "text": "Cronex as a Client\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n    },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
+    "section": "Cronex Configuration",
+    "text": "Cronex Configuration\n-- init.lua:\n{\n 'fabridamicelli/cronex.nvim',\n opts = {}, \n}"
+  },
+  {
+    "objectID": "talk.html#cronex-configuration-1",
+    "href": "talk.html#cronex-configuration-1",
+    "title": "cronex.nvim",
+    "section": "Cronex Configuration",
+    "text": "Cronex Configuration\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n    },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
   },
   {
     "objectID": "talk.html#code-documentation",

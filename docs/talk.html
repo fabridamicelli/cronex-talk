@@ -451,21 +451,29 @@
 <h2>Cronex in Action</h2>
 
 <img data-src="screencast-usage.gif" class="r-stretch"></section>
-<section id="cronex-as-a-client" class="slide level2">
-<h2>Cronex as a Client</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb4-1"><a></a><span class="fu">require</span><span class="op">(</span><span class="st">"cronex"</span><span class="op">).</span>setup<span class="op">({</span></span>
-<span id="cb4-2"><a></a>    <span class="va">extractor</span> <span class="op">=</span> <span class="op">{</span></span>
-<span id="cb4-3"><a></a>        <span class="va">cron_from_line</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.cron_from_line"</span><span class="op">).</span><span class="va">cron_from_line</span><span class="op">,</span></span>
-<span id="cb4-4"><a></a>        <span class="va">extract</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.extract"</span><span class="op">).</span><span class="va">extract</span><span class="op">,</span></span>
-<span id="cb4-5"><a></a>    <span class="op">},</span></span>
-<span id="cb4-6"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
-<span id="cb4-7"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">"cronstrue"</span><span class="op">,</span></span>
-<span id="cb4-8"><a></a>        <span class="va">args</span> <span class="op">=</span> <span class="op">{}</span></span>
-<span id="cb4-9"><a></a>    <span class="op">},</span></span>
-<span id="cb4-10"><a></a>    <span class="fu">format</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">s</span><span class="op">)</span></span>
-<span id="cb4-11"><a></a>        <span class="cf">return</span> <span class="va">s</span></span>
-<span id="cb4-12"><a></a>    <span class="kw">end</span></span>
-<span id="cb4-13"><a></a><span class="op">})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="cronex-configuration" class="slide level2">
+<h2>Cronex Configuration</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb4-1"><a></a><span class="co">-- init.lua:</span></span>
+<span id="cb4-2"><a></a><span class="op">{</span></span>
+<span id="cb4-3"><a></a> <span class="st">'fabridamicelli/cronex.nvim'</span><span class="op">,</span></span>
+<span id="cb4-4"><a></a> <span class="va">opts</span> <span class="op">=</span> <span class="op">{},</span> </span>
+<span id="cb4-5"><a></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="cronex-configuration-1" class="slide level2">
+<h2>Cronex Configuration</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb5-1"><a></a><span class="fu">require</span><span class="op">(</span><span class="st">"cronex"</span><span class="op">).</span>setup<span class="op">({</span></span>
+<span id="cb5-2"><a></a>    <span class="va">extractor</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb5-3"><a></a>        <span class="va">cron_from_line</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.cron_from_line"</span><span class="op">).</span><span class="va">cron_from_line</span><span class="op">,</span></span>
+<span id="cb5-4"><a></a>        <span class="va">extract</span> <span class="op">=</span> <span class="fu">require</span><span class="op">(</span><span class="st">"cronex.extract"</span><span class="op">).</span><span class="va">extract</span><span class="op">,</span></span>
+<span id="cb5-5"><a></a>    <span class="op">},</span></span>
+<span id="cb5-6"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb5-7"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">"cronstrue"</span><span class="op">,</span></span>
+<span id="cb5-8"><a></a>        <span class="va">args</span> <span class="op">=</span> <span class="op">{}</span></span>
+<span id="cb5-9"><a></a>    <span class="op">},</span></span>
+<span id="cb5-10"><a></a>    <span class="fu">format</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">s</span><span class="op">)</span></span>
+<span id="cb5-11"><a></a>        <span class="cf">return</span> <span class="va">s</span></span>
+<span id="cb5-12"><a></a>    <span class="kw">end</span></span>
+<span id="cb5-13"><a></a><span class="op">})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img data-src="use-clock.png" class="r-stretch"></section>
 <section id="code-documentation" class="slide level2">

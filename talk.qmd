@@ -68,10 +68,23 @@ do stuff...
 
 ![](screencast-usage.gif)
 
+---
+
+## Cronex Configuration
+
+```lua
+-- init.lua:
+{
+ 'fabridamicelli/cronex.nvim',
+ opts = {}, 
+}
+
+```
+
 
 ---
 
-## Cronex as a Client
+## Cronex Configuration
 
 ```lua
 require("cronex").setup({
