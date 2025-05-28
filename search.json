@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "demo/todo.html",
+    "href": "demo/todo.html",
+    "title": "cronex.nvim",
+    "section": "",
+    "text": "the problem\nwhat is cronex\nsimple config\ncronex client structure\nlive demo:\n\nasync (many)\nformat\nsymbol"
+  },
+  {
+    "objectID": "talk.html#section",
+    "href": "talk.html#section",
+    "title": "cronex.nvim",
+    "section": "",
+    "text": "name: An awesome GitHub workflow\non:\n  schedule:\n    - cron: '2-3 */4 1,2,4 2 4-6'\n\n\ndo stuff..."
+  },
+  {
+    "objectID": "talk.html#cronex-in-action",
+    "href": "talk.html#cronex-in-action",
+    "title": "cronex.nvim",
+    "section": "Cronex in Action",
+    "text": "Cronex in Action"
+  },
+  {
+    "objectID": "talk.html#cronex-configuration",
+    "href": "talk.html#cronex-configuration",
+    "title": "cronex.nvim",
+    "section": "Cronex Configuration",
+    "text": "Cronex Configuration\n-- init.lua:\n{\n 'fabridamicelli/cronex.nvim',\n opts = {}, \n}"
+  },
+  {
+    "objectID": "talk.html#cronex-configuration-1",
+    "href": "talk.html#cronex-configuration-1",
+    "title": "cronex.nvim",
+    "section": "Cronex Configuration",
+    "text": "Cronex Configuration\nrequire(\"cronex\").setup({\n    extractor = {\n        cron_from_line = require(\"cronex.cron_from_line\").cron_from_line,\n        extract = require(\"cronex.extract\").extract,\n    },\n    explainer = {\n        cmd = \"cronstrue\",\n        args = {}\n    },\n    format = function(s)\n        return s\n    end\n})"
+  },
+  {
+    "objectID": "talk.html#code-documentation",
+    "href": "talk.html#code-documentation",
+    "title": "cronex.nvim",
+    "section": "Code & Documentation",
+    "text": "Code & Documentation\n\n\n\n\n\n github.com/ fabridamicelli/ cronex.nvim"
+  }
+]
