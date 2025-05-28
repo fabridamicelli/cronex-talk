@@ -2,7 +2,7 @@
 title: "`cronex.nvim`"
 subtitle: "🕒 Make cron expressions readable again 🤓"
 author:
- - "爵 fabridamicelli.github.io"
+ - "🌐 fabridamicelli.github.io"
  - "𝕏 fabridamicelli"
 
 title-slide-attributes:
