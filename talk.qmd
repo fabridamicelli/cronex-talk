@@ -122,9 +122,9 @@ require("cronex").setup({
 
  <br/><br/>
 
+![](./github-logo.svg){width=30% fig-align=center}
 
 <span style="font-size:2.2em;">
- github.com/
  fabridamicelli/
  cronex.nvim
 </span>
