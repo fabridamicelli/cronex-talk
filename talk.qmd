@@ -1,5 +1,5 @@
 ---
-title: "`cronex.nvim`"
+title: "cronex.nvim"
 subtitle: "🕒 Make cron expressions readable again 🤓"
 author:
  - "🌐 fabridamicelli.github.io"
@@ -75,8 +75,12 @@ do stuff...
 ```lua
 -- init.lua:
 {
- 'fabridamicelli/cronex.nvim',
- opts = {}, 
+  'fabridamicelli/cronex.nvim',
+  opts = {
+    explainer = {
+        cmd = 'cronstrue',
+    }
+  }
 }
 
 ```
@@ -102,7 +106,7 @@ require("cronex").setup({
 })
 
 ```
-![](use-clock.png)
+<!-- ![](use-clock.png) -->
 
 ---
 
