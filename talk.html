@@ -6,12 +6,12 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.30">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="🌐 fabridamicelli.github.io">
   <meta name="author" content="𝕏 fabridamicelli">
-  <title>cronex.nvim – cronex.nvim</title>
+  <title>cronex.nvim</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -194,7 +194,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="nvim.png" data-background-position="22% 38%" data-background-size="5%" class="quarto-title-block center">
-  <h1 class="title"><code>cronex.nvim</code></h1>
+  <h1 class="title">cronex.nvim</h1>
   <p class="subtitle">🕒 Make cron expressions readable again 🤓</p>
 
 <div class="quarto-title-authors">
@@ -256,9 +256,13 @@
 <h2>Cronex Configuration</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource lua number-lines code-with-copy"><code class="sourceCode lua"><span id="cb4-1"><a></a><span class="co">-- init.lua:</span></span>
 <span id="cb4-2"><a></a><span class="op">{</span></span>
-<span id="cb4-3"><a></a> <span class="st">'fabridamicelli/cronex.nvim'</span><span class="op">,</span></span>
-<span id="cb4-4"><a></a> <span class="va">opts</span> <span class="op">=</span> <span class="op">{},</span> </span>
-<span id="cb4-5"><a></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a></a>  <span class="st">'fabridamicelli/cronex.nvim'</span><span class="op">,</span></span>
+<span id="cb4-4"><a></a>  <span class="va">opts</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb4-5"><a></a>    <span class="va">explainer</span> <span class="op">=</span> <span class="op">{</span></span>
+<span id="cb4-6"><a></a>        <span class="va">cmd</span> <span class="op">=</span> <span class="st">'cronstrue'</span><span class="op">,</span></span>
+<span id="cb4-7"><a></a>    <span class="op">}</span></span>
+<span id="cb4-8"><a></a>  <span class="op">}</span></span>
+<span id="cb4-9"><a></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="cronex-configuration-1" class="slide level2">
 <h2>Cronex Configuration</h2>
@@ -275,8 +279,8 @@
 <span id="cb5-11"><a></a>        <span class="cf">return</span> <span class="va">s</span></span>
 <span id="cb5-12"><a></a>    <span class="kw">end</span></span>
 <span id="cb5-13"><a></a><span class="op">})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-<img data-src="use-clock.png" class="r-stretch"></section>
+<!-- ![](use-clock.png) -->
+</section>
 <section id="code-documentation" class="slide level2">
 <h2>Code &amp; Documentation</h2>
 <div class="columns">
@@ -573,7 +577,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/fabridamicelli\.github\.io\/cronex-talk\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

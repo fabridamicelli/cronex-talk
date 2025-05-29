@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "demo/todo.html",
-    "href": "demo/todo.html",
-    "title": "cronex.nvim",
-    "section": "",
-    "text": "the problem\nwhat is cronex\nsimple config\ncronex client structure\nlive demo:\n\nasync (many)\nformat\nsymbol"
-  },
-  {
     "objectID": "talk.html#section",
     "href": "talk.html#section",
     "title": "cronex.nvim",
@@ -25,7 +18,7 @@
     "href": "talk.html#cronex-configuration",
     "title": "cronex.nvim",
     "section": "Cronex Configuration",
-    "text": "Cronex Configuration\n-- init.lua:\n{\n 'fabridamicelli/cronex.nvim',\n opts = {}, \n}"
+    "text": "Cronex Configuration\n-- init.lua:\n{\n  'fabridamicelli/cronex.nvim',\n  opts = {\n    explainer = {\n        cmd = 'cronstrue',\n    }\n  }\n}"
   },
   {
     "objectID": "talk.html#cronex-configuration-1",
